@@ -1,0 +1,20 @@
+.loading{
+	text-align: center;
+	.message{
+		color: #888;
+	}
+	i{
+		animation: loading 1.5s infinite linear;
+		font-size: 50px; 
+		color: #555;
+		display: block;
+		width: 50px;
+		margin: 0 auto;
+	}
+}
+@keyframes loading {
+	form{ transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+
+

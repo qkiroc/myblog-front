@@ -1,0 +1,14 @@
+.article-detail{
+	&-content{
+		width: 800px;
+		margin: 0 auto;
+		padding: 80px 0 20px;
+		border-bottom: 1px solid #e2e2e2;
+	}
+	&-comment{
+		width: 800px;
+		margin: 0 auto;
+		padding: 40px 30px;
+		box-sizing: border-box;
+	}
+}

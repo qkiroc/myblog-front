@@ -1,0 +1,42 @@
+@import '../../scss/base.scss';
+.nav{
+	height: 60px;
+	background: #fff;
+	padding: 0 280px;
+	width: 100%;
+	min-width: 1280px;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0; 
+	z-index: 11;
+	box-shadow: 0 2px 1px 0 #eee;
+	.menu{
+		float: right;
+		.link{ 
+			color: $textColor;
+			margin-right: 20px;
+			width: 80px;
+			display: inline-block;
+			text-align: center;
+			height: 30px;
+			line-height: 30px;
+			margin-top: 15px;
+			font-size: 14px;
+			transition: color 0.3s;
+			&:hover{
+				color:$textColorSecondary;
+			}
+		}
+		.active{
+			color: $textColorSecondary;
+			&:after{
+				content: '';
+				display: block;
+				height: 2px;
+				width: 20px;
+				background-color: $textColorSecondary;
+				margin: 0 auto;
+			}
+		}
+	}
+}

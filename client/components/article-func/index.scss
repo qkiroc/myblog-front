@@ -1,0 +1,44 @@
+.article-func{
+	display: flex;
+	font-size: 12px;
+	color: #999999;
+	height: 54px;
+	justify-content: flex-end;
+	align-items: center;
+	user-select: none;
+	.collect,.like{
+		cursor: pointer;
+
+	}
+	.collected,.liked{
+		color: #ce7b00;
+	}
+	.choosed{
+		&:before{
+			display: inline-block;
+			animation: choose .5s 1;
+			color: #ce7b00;
+		}
+	}
+	div{
+		margin-left: 30px;	
+		i{
+			vertical-align: middle;
+			margin-right: 3px;
+		}
+
+	}
+}
+@keyframes choose {
+	0% {
+		color: #999999;
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(2);
+	}
+	100% {
+		color: #ce7b00;
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,23 @@
+.show-emoji{
+	height: 170px;
+	width: 320px;
+	background-color: #f7f7f7;
+	padding: 10px;
+	z-index: 12;
+	position: absolute;
+	font-size: 30px;
+	border-radius: 2px;
+	border: 2px double #ececec;
+	overflow-y: scroll;
+	div{
+		cursor: pointer;
+		margin: 5px;
+		display: inline-block;
+		height: 30px;
+		width: 30px;
+		line-height: 30px;
+	}
+}
+.hidden-emoji{
+	display: none;
+}

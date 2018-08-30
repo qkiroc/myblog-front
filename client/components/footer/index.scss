@@ -1,0 +1,66 @@
+.footer{
+	background-color: #353235;
+	height: 200px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 280px;
+	min-width: 1280px;
+	position: absolute;
+	bottom: 0px;
+	.top{
+		display: flex;
+		color: #fff;
+		height: 140px;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #505050;
+		.logo{
+			font-size: 20px;
+		}
+		.footer-nav{
+			a{
+				margin-left: 30px;
+				color: #e2e2e2;
+				font-size: 14px;
+			}
+		}
+		.connect{
+			display: flex;
+			>div{
+				margin-left: 40px;
+			}
+			
+			i{
+				font-size: 26px;
+				cursor: pointer;
+				color: #fff;
+			}
+			.qq,.wechat{
+				position: relative;
+				.qr-code{
+					height: 100px;
+					width: 100px;
+					background-color: #000;
+					position: absolute;
+					top: -110px;
+					left: -37px;
+					transition: opacity 0.5s;
+					img{
+						height: 100px;
+						width: 100px;
+					}
+				}
+			}
+			
+			
+		}
+	}
+	.bottom{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #8c8b8b;
+		font-size: 12px;
+		height: 60px;
+	}
+}
